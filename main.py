@@ -20,7 +20,15 @@ while True:
         print("Livro cadastrado!")
 
     elif opcao == "2":
-        print("Listar livros")
+
+        if len(livros) == 0:
+            print("Nenhum livro cadastrado")
+
+        else:
+            print("\nLivros cadastrados:")
+
+            for livro in livros:
+                print(f"- {livro}")
 
     elif opcao == "3":
         break
