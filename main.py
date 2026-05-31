@@ -5,7 +5,8 @@ def menu():
     print("\n=== BIBLIOTECA ===")
     print("1 - Cadastrar livro")
     print("2 - Listar livros")
-    print("3 - Sair")
+    print("3 - Buscar livro")
+    print("4 - Sair")
 
 
 while True:
@@ -31,4 +32,14 @@ while True:
                 print(f"- {livro}")
 
     elif opcao == "3":
+
+        busca = input("Digite o nome do livro: ")
+
+        if busca in livros:
+            print("Livro encontrado!")
+
+        else:
+            print("Livro não encontrado")
+
+    elif opcao == "4":
         break
