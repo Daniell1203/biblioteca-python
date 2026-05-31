@@ -6,7 +6,8 @@ def menu():
     print("1 - Cadastrar livro")
     print("2 - Listar livros")
     print("3 - Buscar livro")
-    print("4 - Sair")
+    print("4 - Remover livro")
+    print("5 - Sair")
 
 
 while True:
@@ -41,5 +42,17 @@ while True:
         else:
             print("Livro não encontrado")
 
+
     elif opcao == "4":
+
+        remover = input("Livro para remover: ")
+
+        if remover in livros:
+            livros.remove(remover)
+            print("Livro removido")
+
+        else:
+            print("Livro não encontrado")
+
+    elif opcao == "5":
         break
