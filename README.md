@@ -1,2 +1,15 @@
-# biblioteca-python
-Sistema de gerenciamento de biblioteca desenvolvido em Python com cadastro, busca, listagem e remoção de livros.
+# Sistema de Biblioteca
+
+Projeto desenvolvido em Python.
+
+## Funcionalidades
+
+- Cadastro de livros
+- Listagem de livros
+- Busca de livros
+- Remoção de livros
+- Persistência em arquivo TXT
+
+## Tecnologias
+
+- Python 3
